@@ -6,5 +6,8 @@ for (int i = 0; i < randomDizi.Length; i++)
     randomDeger=random.Next(100);
     randomDizi[i] = randomDeger;                // oluşturulan random değerleri dizi içine atıyoruz
     Console.WriteLine($"[{randomDizi[i]}]");  // dizimizi yazdırıyoruz
-
 }
+
+Array.Sort(randomDizi);
+foreach (int yazdir in randomDizi)
+    Console.Write($"[{yazdir}],");
